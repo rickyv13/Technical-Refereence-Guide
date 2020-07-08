@@ -1,5 +1,97 @@
+<style>
+/*--Nav Bar Info below--*/
+*{
+  background-color: white;
+}
 
-<!-- FCC TESTING SCRIPT ABOVE -->
+nav{
+  margin: 0;
+}
+
+#nav-header{
+    border-bottom: 2px solid;
+    border-color: black;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#nav-list {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style-type: none;
+}
+
+.nav-link{
+  display: block;/* What allows it to take up whole block*/
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid;
+  list-style:none;
+  color: #000;
+  text-decoration: none;
+}
+
+.last-link{
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+/*--Nav Bar Info above--*/
+
+
+main{
+  position: absolute;
+  margin-left: 310px;
+  text-align: left;
+}
+
+.top{
+  visibility: hidden;
+   display: block;/* What allows it to take up whole block*/
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid;
+  list-style:none;
+  color: #000;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px){
+  #navbar{
+    position: absolute;
+    max-height: 250px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 2px solid;
+    border-color: black;
+  }
+  
+  main{
+    position: relative;
+    margin-top: 310px;
+    margin-left: 0px;
+  }
+  .top{
+   visibility: visible;
+  text-align: center;
+}
+}
+</style>
+
+<!-- Style ABOVE -->
 <nav id ="navbar" class = "navbar">
   <header id = "nav-header"><h2>Technical Refernce Guide</h2></header>
   <ul id ="nav-list">
